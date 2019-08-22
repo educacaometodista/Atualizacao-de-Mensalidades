@@ -1,12 +1,12 @@
-const BillingCycle = require('./billingCycle')
+const Mensalidades = require('./billingCycle')
 const errorHandler = require('../common/errorHandler')
 
-BillingCycle.methods(['get', 'post', 'put', 'delete'])
-BillingCycle.updateOptions({new: true, runValidators: true})
-BillingCycle.after('post', errorHandler).after('put', errorHandler)
+Mensalidades.methods(['get', 'post', 'put', 'delete'])
+Mensalidades.updateOptions({new: true, runValidators: true})
+Mensalidades.after('post', errorHandler).after('put', errorHandler)
 
-BillingCycle.route('count', (req, res, next) => {
-    BillingCycle.count((error, value) => {
+Mensalidades.route('count', (req, res, next) => {
+    Mensalidades.count((error, value) => {
         if(error) {
             res.status(500).json({errors: [error]})
         } else {
@@ -15,8 +15,8 @@ BillingCycle.route('count', (req, res, next) => {
     })
 })
 
-BillingCycle.route('summary', (req, res, next) => {
-    BillingCycle.aggregate({
+Mensalidades.route('summary', (req, res, next) => {
+    Mensalidades.aggregate({
         $project: {credit: {$sum: "$credits.value"}, debt: {$sum: "$debts.value"}}
     }, {
         $group: {_id: null, credit: {$sum: "$credit"}, debt: {$sum: "$debt"}}
@@ -31,4 +31,4 @@ BillingCycle.route('summary', (req, res, next) => {
     })
 })
 
-module.exports = BillingCycle
+module.exports = Mensalidades
