@@ -12,6 +12,10 @@ button {
     width: 150px;
 }
 
+.align-right {
+    text-align: right;
+}
+
 @media (max-width:469px){
     .table-actions {
         width: 120px;
