@@ -63,6 +63,11 @@ class ClientsList extends Component {
     }
 }
 
+window.onload = function(){
+    var teste = document.getElementById('publicidade-e-propaganda-UMESP-price').innerText;
+    console.log(teste)
+}
+
 const mapStateToProps = state => ({list: state.clients.list})
 const mapDispatchToProps = dispatch => bindActionCreators({getList, showUpdate, showDelete}, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(ClientsList)
