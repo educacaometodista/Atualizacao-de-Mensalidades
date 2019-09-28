@@ -220,7 +220,7 @@ class TopNav extends Component {
             <MobileMenuIcon />
           </NavLink>
 
-          <div className="search" data-search-path="/app/pages/search">
+          {/* <div className="search" data-search-path="/app/pages/search">
             <Input
               name="searchKeyword"
               id="searchKeyword"
@@ -235,9 +235,9 @@ class TopNav extends Component {
             >
               <i className="simple-icon-magnifier" />
             </span>
-          </div>
+          </div> */}
 
-          <div className="d-inline-block">
+          {/* <div className="d-inline-block">
             <UncontrolledDropdown className="ml-2">
               <DropdownToggle
                 caret
@@ -260,14 +260,14 @@ class TopNav extends Component {
                 })}
               </DropdownMenu>
             </UncontrolledDropdown>
-          </div>
+          </div> */}
           <div className="position-relative d-none d-none d-lg-inline-block">
             <a
               className="btn btn-outline-primary btn-sm ml-2"
               target="_top"
               href="https://gogo-react.coloredstrategies.com/app/dashboards/default"
             >
-              <IntlMessages id="user.buy" />
+              <IntlMessages id="user.project" />
             </a>
           </div>
         </div>
@@ -275,7 +275,7 @@ class TopNav extends Component {
           <span className="logo d-none d-xs-block" />
           <span className="logo-mobile d-block d-xs-none" />
         </a>
-        <div className="navbar-right">
+        {/* <div className="navbar-right">
           {isDarkSwitchActive && <TopnavDarkSwitch />}
 
           <div className="header-icons d-inline-block align-middle">
@@ -315,7 +315,7 @@ class TopNav extends Component {
               </DropdownMenu>
             </UncontrolledDropdown>
           </div>
-        </div>
+        </div> */}
       </nav>
     );
   }
