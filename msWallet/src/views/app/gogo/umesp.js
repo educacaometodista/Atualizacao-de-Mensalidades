@@ -18,9 +18,9 @@ export default class Umesp extends Component {
   componentDidMount() {
     Tabletop.init({
       key: '1QpPgpAKyZXvwirnHekmSWqYsaT7s0B4Szd0UsYEEPJw',
-      // orderby: 'Posição',
+      orderby: 'Curso',
       reverse: false,
-      wanted: ['AAA'],
+      wanted: ['UMESP'],
 
       callback: googleData => {
         this.setState({
@@ -55,24 +55,21 @@ export default class Umesp extends Component {
                       <table className="table">
                         <thead className="bg-dark">
                           <tr>
-                            <th>Descrição</th>
-                            <th>Data</th>
-                            <th>Valor</th>
+                            <th>Nome do Curso</th>
+                            <th>Ano e Semestre</th>
+                            <th>Valor Real</th>
+                            <th>Valor com Desconto</th>
                           </tr>
                         </thead>
                         <tbody>
-                          {/* <tr>
-                            <td>Descrição</td>
-                            <td>Nome</td>
-                            <td>Valor</td>
-                          </tr> */}
                         {
                           data.map(obj => {
                             return (
                               <tr key={obj._id}>    
-                                <td>{obj.Coluna1}</td>
-                                <td>{obj.Coluna2}</td>
-                                <td>{obj.Coluna3}</td>
+                                <td id={`curso-${obj.Curso}`.replace(/\s/g, '-')}>{obj.Curso}</td>
+                                <td id={`referencia-${obj.Curso}`.replace(/\s/g, '-')}>{obj.Referência}</td>
+                                <td id={`valor-${obj.Curso}`.replace(/\s/g, '-')}>{obj.Valor}</td>
+                                <td id={`antecipado-${obj.Curso}`.replace(/\s/g, '-')}>{obj.Antecipado}</td>
                               </tr>
                             )
                           })
