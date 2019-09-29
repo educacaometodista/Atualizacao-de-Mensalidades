@@ -70,7 +70,7 @@ export default class Unimep extends Component {
                                 <td id={`curso-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Curso}</td>
                                 <td id={`referencia-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Referência}</td>
                                 <td id={`valor-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Valor}</td>
-                                <td id={`antecipado-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()} className="text-success"><strong>{obj.Antecipado}</strong></td>
+                                <td id={`antecipado-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()} className="text-success">{obj.Antecipado}</td>
                                 <td>
                                 <a 
                                 href={ie+obj.Curso.toLowerCase().replace(/\s/g, '-')} 
