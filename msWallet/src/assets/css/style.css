@@ -1,6 +1,6 @@
 .footer {
     background: #505050;
-    height: 60px;
+    height: 70px;
     padding: 1.5rem 0;
     box-shadow: 1px -3px 11px 0px #0000001c;
 }
@@ -15,11 +15,10 @@
     height: 200px;
 }
 
-div .logoFooter img {
+div.logoFooter img {
+    margin-top: -20px;
     position: absolute;
-    right: 0px;
-    padding-right: 18px;
-    width: 60px;
+    right: 3.33%;
 }
 
 .d-block {
