@@ -24,14 +24,14 @@ module.exports = {
     "user.login-button": "LOGIN",
     "user.register-button": "CADASTRO",
     "user.reset-password-button": "LIMPAR",
-    "user.project": "Contato",
+    "user.project": "Relatar um problema",
     "user.username": "Usuário",
   
     /* 03.Menu */
     "menu.app": "Início",
     "menu.dashboards": "Dashboards",
     "menu.ies": "Ensino Superior",
-    "menu.gogo": "Investimentos",
+    "menu.gogo": "Ensino Superior",
     "menu.start": "Dashboard",
     "menu.umesp": /* "Universidade Metodista de São Paulo" */ "UMESP",
     "menu.unimep": /*"Universidade Metodista de Piracicaba"*/ "UNIMEP",
