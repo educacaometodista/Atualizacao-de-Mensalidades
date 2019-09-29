@@ -3,8 +3,6 @@ import { Row } from "reactstrap";
 import { Colxx, Separator } from "../../../components/common/CustomBootstrap";
 
 import Breadcrumb from "../../../containers/navs/Breadcrumb";
-import GradientWithRadialProgressCard from "../../../components/cards/GradientWithRadialProgressCard";
-import IconCard from "../../../components/cards/IconCard";
 
 import Tabletop from 'tabletop';
 
@@ -59,45 +57,52 @@ export default class Start extends Component {
                     <Separator className="mb-5" />
                     <p>
                       <span>
-                      Visando facilitar para nossos colaboradores e concentrar as informações referente a preços de mensalidades dos cursos da Educação Metodista, criamos este sistema. Navegue no menu abaixo ou na lateral para escolher a instituição de ensino superior que você está procurando.
+                      Visando facilitar para nossos colaboradores e concentrar as informações referente a preços de mensalidades dos cursos da Educação Metodista, criamos este sistema. Navegue no menu lateral para escolher a instituição de ensino superior que você está procurando.
                       </span>
                     </p>
+
+                    <p>
+                      <h3>
+                      Para visitar os portais individuais de cada instituição, use os menus abaixo.
+                      </h3>
+                    </p>
+
                     <p className="lead mb-0">
-                      <button className="btn btn-primary btn-sm mr-1 mt-1">
+                      <a href="umesp" className="btn btn-primary btn-sm mr-1 mt-1">
                         <span>
                           Universidade Metodista de São Paulo
                         </span>
-                      </button>
-                      <button className="btn btn-primary btn-sm mr-1 mt-1">
+                      </a>
+                      <a href="unimep" className="btn btn-primary btn-sm mr-1 mt-1">
                         <span>
                           Universidade Metodista de Piracicaba
                         </span>
-                      </button>
-                      <button className="btn btn-primary btn-sm mr-1 mt-1">
+                      </a>
+                      <a href="centenario" className="btn btn-primary btn-sm mr-1 mt-1">
                         <span>
                           Faculdade Metodista Centenário
                         </span>
-                      </button>
-                      <button className="btn btn-primary btn-sm mr-1 mt-1">
+                      </a>
+                      <a href="izabela" className="btn btn-primary btn-sm mr-1 mt-1">
                         <span>
                           Izabela Hendrix
                         </span>
-                      </button>
-                      <button className="btn btn-primary btn-sm mr-1 mt-1">
+                      </a>
+                      <a href="granbery" className="btn btn-primary btn-sm mr-1 mt-1">
                         <span>
                           Faculdade Metodista Granbery
                         </span>
-                      </button>
-                      <button className="btn btn-primary btn-sm mr-1 mt-1">
+                      </a>
+                      <a href="ipa" className="btn btn-primary btn-sm mr-1 mt-1">
                         <span>
                           IPA
                         </span>
-                      </button>
-                      <button className="btn btn-info btn-sm mr-1 mt-1">
+                      </a>
+                      <a href="EducacaoADistancia" className="btn btn-info btn-sm mr-1 mt-1">
                         <span>
                           Educação a Distância
                         </span>
-                      </button>
+                      </a>
                     </p>
                   </div>
                 </div>
