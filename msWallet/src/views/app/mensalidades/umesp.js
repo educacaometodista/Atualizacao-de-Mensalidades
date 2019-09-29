@@ -34,7 +34,7 @@ export default class Umesp extends Component {
 
     render() {
       const { data } = this.state
-      const ie = "https://metodista.br/"
+      const ie = "http://metodista.br/"
       // const weg = data[0]
       // console.log(weg)
 
