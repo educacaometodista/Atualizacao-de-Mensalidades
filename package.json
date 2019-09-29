@@ -1,7 +1,7 @@
 {
-  "name": "gogo-react",
+  "name": "atualizacao-de-mensalidades",
   "version": "4.2.2",
-  "description": "Gogo - React Bootstrap 4 Admin Dashboard Template",
+  "description": "Atualização de Mensalidades | Educação Metodista",
   "private": true,
   "dependencies": {
     "@glidejs/glide": "^3.3.0",
