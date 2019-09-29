@@ -23,7 +23,7 @@ const Izabela = React.lazy(() =>
   import(/* webpackChunkName: "start" */ './izabela')
 );
 const ADistancia = React.lazy(() =>
-  import(/* webpackChunkName: "start" */ './ensinoADistancia')
+  import(/* webpackChunkName: "start" */ './EducacaoADistancia')
 );
 
 
@@ -67,7 +67,7 @@ const Gogo = ({ match }) => (
         <Izabela {...props} />}
       />
       <Route
-        path={`${match.url}/ensinoADistancia`} 
+        path={`${match.url}/EducacaoADistancia`} 
         render={props => 
         <ADistancia {...props} />}
       />
