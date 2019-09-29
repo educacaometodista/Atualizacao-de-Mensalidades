@@ -3,55 +3,55 @@ const data = [
     id: "start",
     icon: "iconsminds-dashboard",
     label: "menu.start",
-    to: "/app/gogo/start",
+    to: "/app/mensalidades/start",
   },
   {
-    id: "gogo",
-    icon: "iconsminds-bank",
+    id: "mensalidades",
+    icon: "iconsminds-museum",
     label: "menu.ies",
-    to: "/app/gogo",
+    to: "/app/mensalidades",
     subs: [
         {
         id: "umesp",
-        icon: "iconsminds-line-chart-1",
+        icon: "iconsminds-bar-chart-4",
         label: "menu.umesp",
-        to: "/app/gogo/umesp"
+        to: "/app/mensalidades/umesp"
       },
       {
         id: "unimep",
-        icon: "iconsminds-building",
+        icon: "iconsminds-bar-chart-4",
         label: "menu.unimep",
-        to: "/app/gogo/unimep"
+        to: "/app/mensalidades/unimep"
       },     
       {
         id: "centenario",
-        icon: "iconsminds-dollar",
+        icon: "iconsminds-bar-chart-4",
         label: "menu.centenario",
-        to: "/app/gogo/centenario"
+        to: "/app/mensalidades/centenario"
       },     
       {
         id: "izabela",
-        icon: "iconsminds-chrysler-building",
+        icon: "iconsminds-bar-chart-4",
         label: "menu.izabela",
-        to: "/app/gogo/izabela"
+        to: "/app/mensalidades/izabela"
       },     
       {
         id: "granbery",
-        icon: "iconsminds-coins",
+        icon: "iconsminds-bar-chart-4",
         label: "menu.granbery",
-        to: "/app/gogo/granbery"
+        to: "/app/mensalidades/granbery"
       },
       {
         id: "ipa",
-        icon: "iconsminds-coins",
+        icon: "iconsminds-bar-chart-4",
         label: "menu.ipa",
-        to: "/app/gogo/ipa"
+        to: "/app/mensalidades/ipa"
       },
       {
         id: "ead",
-        icon: "iconsminds-coins",
+        icon: "iconsminds-bar-chart-4",
         label: "menu.ead",
-        to: "/app/gogo/ensinoADistancia"
+        to: "/app/mensalidades/ensinoADistancia"
       }
         ]
   },

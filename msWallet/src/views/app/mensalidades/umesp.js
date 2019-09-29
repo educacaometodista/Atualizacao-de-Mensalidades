@@ -34,7 +34,7 @@ export default class Umesp extends Component {
 
     render() {
       const { data } = this.state
-
+      const ie = "https://metodista.br/"
       // const weg = data[0]
       // console.log(weg)
 
@@ -42,7 +42,7 @@ export default class Umesp extends Component {
             <Fragment>
             <Row>
               <Colxx xxs="6">
-                <Breadcrumb heading="menu.umesp" match={this.props.match} />
+                <Breadcrumb heading="Universidade Metodista de São Paulo" match={this.props.match} />
               </Colxx>
               <Colxx xxs="12">
                 <Separator className="mb-5" />
@@ -52,13 +52,14 @@ export default class Umesp extends Component {
             <Row>
               <Colxx xs="12">
               <div className="table-responsive">
-                      <table className="table">
+                      <table className="table table-hover">
                         <thead className="bg-dark">
                           <tr>
                             <th>Nome do Curso</th>
-                            <th>Ano e Semestre</th>
+                            <th>Referência</th>
                             <th>Valor Real</th>
                             <th>Valor com Desconto</th>
+                            <th>Página do Curso</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -66,10 +67,18 @@ export default class Umesp extends Component {
                           data.map(obj => {
                             return (
                               <tr key={obj._id}>    
-                                <td id={`curso-${obj.Curso}`.replace(/\s/g, '-')}>{obj.Curso}</td>
-                                <td id={`referencia-${obj.Curso}`.replace(/\s/g, '-')}>{obj.Referência}</td>
-                                <td id={`valor-${obj.Curso}`.replace(/\s/g, '-')}>{obj.Valor}</td>
-                                <td id={`antecipado-${obj.Curso}`.replace(/\s/g, '-')}>{obj.Antecipado}</td>
+                                <td id={`curso-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Curso}</td>
+                                <td id={`referencia-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Referência}</td>
+                                <td id={`valor-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Valor}</td>
+                                <td id={`antecipado-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()} className="text-success"><strong>{obj.Antecipado}</strong></td>
+                                <td>
+                                <a 
+                                href={ie+obj.Curso.toLowerCase().replace(/\s/g, '-')} 
+                                target="_blank"
+                                className="btn btn-success btn-sm">
+                                  Conhecer Curso
+                                </a>
+                                </td>
                               </tr>
                             )
                           })
