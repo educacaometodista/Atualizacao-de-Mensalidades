@@ -21,3 +21,11 @@ div .logoFooter img {
     padding-right: 18px;
     width: 60px;
 }
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
