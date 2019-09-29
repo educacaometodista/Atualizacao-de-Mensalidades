@@ -1,0 +1,23 @@
+.footer {
+    background: #505050;
+    height: 60px;
+    padding: 1.5rem 0;
+    box-shadow: 1px -3px 11px 0px #0000001c;
+}
+
+.footer a {
+    color: #fff;
+    font-weight: bold;
+    padding-left: 7px;
+}
+
+.navbar #iconMenuDropdown{
+    height: 200px;
+}
+
+div .logoFooter img {
+    position: absolute;
+    right: 0px;
+    padding-right: 18px;
+    width: 60px;
+}
