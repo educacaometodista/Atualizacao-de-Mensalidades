@@ -8,8 +8,6 @@ export const subHiddenBreakpoint = 1440;
 export const menuHiddenBreakpoint = 768;
 export const defaultLocale = "br";
 export const localeOptions = [
-  { id: "en", name: "English", direction: "ltr" },
-  { id: "es", name: "Español", direction: "ltr" },
   { id: "br", name: "Português", direction: "ltr" }
 ];
 
@@ -30,7 +28,7 @@ Color Options:
 "light.purple", "light.blue", "light.green", "light.orange", "light.red", "dark.purple", "dark.blue", "dark.green", "dark.orange", "dark.red"
 */
 export const isMultiColorActive = true;
-export const defaultColor = "light.red";
+export const defaultColor = "dark.green";
 export const defaultDirection = "ltr";
 export const isDarkSwitchActive = true;
 export const themeColorStorageKey="__theme_color";
