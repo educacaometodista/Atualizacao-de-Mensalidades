@@ -4,14 +4,14 @@ import { connect } from 'react-redux';
 
 import AppLayout from '../../layout/AppLayout';
 
-const Gogo = React.lazy(() =>
-  import(/* webpackChunkName: "viwes-gogo" */ './mensalidades'),
+const Mensalidades = React.lazy(() =>
+  import(/* webpackChunkName: "viwes-Mensalidades" */ './mensalidades'),
 );
-const SecondMenu = React.lazy(() =>
-  import(/* webpackChunkName: "viwes-second-menu" */ './second-menu')
-);
-const BlankPage = React.lazy(() =>
-  import(/* webpackChunkName: "viwes-blank-page" */ './blank-page')
+// const SecondMenu = React.lazy(() =>
+//   import(/* webpackChunkName: "viwes-second-menu" */ './second-menu')
+// );
+const Contato = React.lazy(() =>
+  import(/* webpackChunkName: "viwes-blank-page" */ './contato')
 );
 
 class App extends Component {
@@ -26,15 +26,15 @@ class App extends Component {
               <Redirect exact from={`${match.url}/`} to={`${match.url}/mensalidades`} />
               <Route
                 path={`${match.url}/mensalidades`}
-                render={props => <Gogo {...props} />}
+                render={props => <Mensalidades {...props} />}
               />
-              <Route
+              {/* <Route
                 path={`${match.url}/second-menu`}
                 render={props => <SecondMenu {...props} />}
-              />
+              /> */}
               <Route
-                path={`${match.url}/blank-page`}
-                render={props => <BlankPage {...props} />}
+                path={`${match.url}/contato`}
+                render={props => <Contato {...props} />}
               />
               <Redirect to="/error" />
             </Switch>
