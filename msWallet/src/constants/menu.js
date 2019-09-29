@@ -51,7 +51,7 @@ const data = [
         id: "ead",
         icon: "iconsminds-bar-chart-4",
         label: "menu.ead",
-        to: "/app/mensalidades/ensinoADistancia"
+        to: "/app/mensalidades/EducacaoADistancia"
       }
         ]
   },
