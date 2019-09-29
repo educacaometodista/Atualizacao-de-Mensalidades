@@ -199,7 +199,7 @@ class TopNav extends Component {
 
   render() {
     const { containerClassnames, menuClickCount, locale } = this.props;
-    const { messages } = this.props.intl;
+
     return (
       <nav className="navbar fixed-top">
         <div className="d-flex align-items-center navbar-left">
@@ -265,9 +265,9 @@ class TopNav extends Component {
             <a
               className="btn btn-outline-primary btn-sm ml-2"
               target="_top"
-              href="https://gogo-react.coloredstrategies.com/app/dashboards/default"
+              href="../contato"
             >
-              <IntlMessages id="user.project" />
+              <IntlMessages id="user.bug" />
             </a>
           </div>
         </div>
