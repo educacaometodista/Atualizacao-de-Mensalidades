@@ -24,14 +24,14 @@ module.exports = {
     "user.login-button": "LOGIN",
     "user.register-button": "CADASTRO",
     "user.reset-password-button": "LIMPAR",
-    "user.project": "Relatar um problema",
+    "user.bug": "Reportar um Erro",
     "user.username": "Usuário",
   
     /* 03.Menu */
     "menu.app": "Início",
     "menu.dashboards": "Dashboards",
     "menu.ies": "Ensino Superior",
-    "menu.gogo": "Ensino Superior",
+    "menu.mensalidades": "Ensino Superior",
     "menu.start": "Dashboard",
     "menu.umesp": /* "Universidade Metodista de São Paulo" */ "UMESP",
     "menu.unimep": /*"Universidade Metodista de Piracicaba"*/ "UNIMEP",
@@ -40,6 +40,7 @@ module.exports = {
     "menu.ipa": /*"Centro Universitário Metodista IPA"*/ "IPA",
     "menu.granbery": /*"Faculdade Metodista Granbery"*/ "Granbery",
     "menu.ead": "Educação a Distância",
+    "menu.EducacaoADistancia": "Educação a Distância",
     "menu.second-menu": "Ferramentas",
     "menu.second": "Ferramentas",
     "menu.ui": "UI",
@@ -49,7 +50,7 @@ module.exports = {
     "menu.todo": "ToDo",
     "menu.search" :"Pesquisar",
     "menu.docs": "Docs",
-    "menu.blank-page": "Extrato",
+    "menu.contato": "Formulário de Contato",
   
    /* 04.Error Page */
    "pages.error-title": "Ooops... Algo está errado.",
