@@ -46,6 +46,7 @@ div.logoFooter img {
     font-size: .8rem;
     width: 93%;
     color: #303030;
+    border-radius: 20px;
 }
 
 .search .search-icon {
