@@ -6,12 +6,16 @@ import Breadcrumb from "../../../containers/navs/Breadcrumb";
 import '../../../assets/css/common/style.css';
 
 import Tabletop from 'tabletop';
+import FilterResults from 'react-filter-search';
+
+import { Input } from "reactstrap";
 
 export default class Centenario extends Component {
   constructor() {
     super()
     this.state = {
-      data: []
+      data: [],
+      value: ''
     }
   }
 
@@ -32,17 +36,36 @@ export default class Centenario extends Component {
     })
   }
 
+  handleChange = event => {
+    const { value } = event.target;
+    this.setState({ value });
+  }
+
     render() {
-      const { data } = this.state
+      const { data, value } = this.state
       const ie = "http://metodistacentenario.com.br/"
-      // const weg = data[0]
-      // console.log(weg)
 
         return (
             <Fragment>
             <Row>
               <Colxx xxs="6">
                 <Breadcrumb heading="Faculdade Metodista Centenário" match={this.props.match} />
+              </Colxx>
+              <Colxx xxs="6">
+              <div className="search" data-search-path="/app/pages/search">
+                <Input
+                  name="searchKeyword"
+                  id="searchKeyword"
+                  placeholder="Digite o nome do curso"
+                  value={value}
+                  onChange={this.handleChange}
+                />
+                <span
+                className="search-icon"
+                >
+                  <i className="simple-icon-magnifier" />
+                </span>
+              </div>
               </Colxx>
               <Colxx xxs="12">
                 <Separator className="mb-5" />
@@ -62,34 +85,32 @@ export default class Centenario extends Component {
                             <th>Página do Curso</th>
                           </tr>
                         </thead>
-                        <tbody>
-                        {
-                          data.map(obj => {
-                            return (
-                              <tr key={obj._id}>    
-                                <td id={`curso-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Curso}</td>
-                                <td id={`referencia-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Referência}</td>
-                                <td id={`valor-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Valor}</td>
-                                <td id={`antecipado-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()} className="text-success">{obj.Antecipado}</td>
-                                <td>
-                                <a 
-                                href={ie+obj.Curso.toLowerCase().replace(/\s/g, '-')} 
-                                target="_blank"
-                                className="btn btn-success btn-sm">
-                                  Conhecer Curso
-                                </a>
-                                </td>
-                              </tr>
-                            )
-                          })
-                        }
-                        </tbody>
+                        
+                        <FilterResults
+                        value={value}
+                        data={data}
+                        renderResults={ data => (
+                          <tbody>
+                            {data.map(obj => {
+                                return (
+                                  <tr key={obj.index}>    
+                                    <td id={`curso-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Curso}</td>
+                                    <td id={`referencia-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Referência}</td>
+                                    <td id={`valor-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()}>{obj.Valor}</td>
+                                    <td id={`antecipado-${obj.Curso}`.replace(/\s/g, '-').toLowerCase()} className="text-success">{obj.Antecipado}</td>
+                                    <td>
+                                    <a href={ie+obj.Curso.toLowerCase().replace(/\s/g, '-')} target="_blank"className="btn btn-success btn-sm">Conhecer Curso</a>
+                                    </td>
+                                  </tr>
+                                )
+                              })
+                              }
+                          </tbody>
+                        )} />                      
                       </table>
                     </div>
               </Colxx>
               </Row>
-            
-
           </Fragment>
         )
     }

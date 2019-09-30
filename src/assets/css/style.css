@@ -28,3 +28,34 @@ div.logoFooter img {
 .d-none {
     display: none;
 }
+
+.search {
+    position: relative;
+    width: 50%;
+    border-radius: 20px;
+    background: #f8f8f8;
+}
+
+.search input {
+    border: initial;
+    background: #0000001c;
+    outline: medium none invert!important;
+    outline: initial!important;
+    padding: .5rem 1rem;
+    line-height: 1.75;
+    font-size: .8rem;
+    width: 93%;
+    color: #303030;
+}
+
+.search .search-icon {
+    font-size: 17px;
+    border-radius: 10px;
+    color: #565656;
+    position: absolute;
+    height: 40px;
+    bottom: -10px;
+    right: 45px;
+    text-align: center;
+}
+
