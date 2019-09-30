@@ -16,7 +16,7 @@ class Footer extends Component {
         <nav className="d-flex footer fixed-bottom">
           <div className="d-flex pl-5 text-white align-items-left">
             Copyright &copy; 2019 
-            <a href="https://github.com/educacaometodista" className="">Educação Metodista.</a> 
+            <a href="https://github.com/educacaometodista" className="">Educação Metodista</a>
             <div className="mr-2 ml-2">
               <a href="https://github.com/educacaometodista/Atualizacao-de-Mensalidades" className="badge badge-light badge-pill">
                 <i className="fab fa-github text-dark"></i>
