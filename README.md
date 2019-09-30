@@ -7,6 +7,15 @@ O projeto foi desenvolvido através de uma necessidade que surgiu entre o Depart
 - Ter instalado o NodeJS juntamente com o pacote NPM
 - Certificar que possui uma versão do Node compatível com o ReactJS
 
+## Screenshots
+Todos os valores representados na imagem são a fim de ilustrar, sendo assim irreais.<br/>
+
+### Dashboard
+<img src="https://github.com/educacaometodista/Atualizacao-de-Mensalidades/blob/master/screenshots/dashboard.png" />
+
+### Página de Instituição
+<img src="https://github.com/educacaometodista/Atualizacao-de-Mensalidades/blob/master/screenshots/curso.png" />
+
 ## Instalação
 
 Primeiramente, clone este repositório<br/>
