@@ -48,15 +48,15 @@ export default class Ipa extends Component {
         return (
             <Fragment>
             <Row>
-              <Colxx xxs="6">
+              <Colxx xxs="8">
                 <Breadcrumb heading="Centro Universitário Metodista IPA" match={this.props.match} />
               </Colxx>
-              <Colxx xxs="6">
+              <Colxx xxs="4">
               <div className="search" data-search-path="/app/pages/search">
                 <Input
                   name="searchKeyword"
                   id="searchKeyword"
-                  placeholder="Digite o nome do curso"
+                  placeholder="Pesquise por Curso"
                   value={value}
                   onChange={this.handleChange}
                 />

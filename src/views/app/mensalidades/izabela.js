@@ -48,15 +48,15 @@ export default class Izabela extends Component {
         return (
             <Fragment>
             <Row>
-              <Colxx xxs="8">
+              <Colxx xxs="9">
                 <Breadcrumb heading="Centro Universitário Metodista Izabela Hendrix" match={this.props.match} />
               </Colxx>
-              <Colxx xxs="4">
+              <Colxx xxs="3">
               <div className="search" data-search-path="/app/pages/search">
                 <Input
                   name="searchKeyword"
                   id="searchKeyword"
-                  placeholder="Digite o nome do curso"
+                  placeholder="Pesquisar"
                   value={value}
                   onChange={this.handleChange}
                 />

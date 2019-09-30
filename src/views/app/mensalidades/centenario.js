@@ -56,7 +56,7 @@ export default class Centenario extends Component {
                 <Input
                   name="searchKeyword"
                   id="searchKeyword"
-                  placeholder="Digite o nome do curso"
+                  placeholder="Pesquise por Curso"
                   value={value}
                   onChange={this.handleChange}
                 />
