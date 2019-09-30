@@ -22,8 +22,8 @@ class Error extends Component {
               <Colxx xxs="12" md="10" className="mx-auto my-auto">
                 <Card className="auth-card">
                   <div className="position-relative image-side ">
-                    <p className="text-white h2">A MÁGICA ESTÁ NOS DETALHES</p>
-                    <p className="white mb-0">É sério!</p>
+                    <p className="text-white h2">Educação Metodista</p>
+                    <p className="white mb-0">Conheça os nossos cursos e instituições de ensino!</p>
                   </div>
                   <div className="form-side">
                     <NavLink to={`/`} className="white">
